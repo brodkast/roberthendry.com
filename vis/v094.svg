@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="911.7 183.4 905.1 791.4" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="v94-clip_1">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+<path id="v94-font_2_1" d=""/>
+<mask id="v94-mask_3">
+<g transform="matrix(1.0002292,0,0,1.0005738,1212.585,189.39444)">
+<image id="v94-image_4" width="598" height="339" data-src="img/36b936211ac580cc.webp"/>
+</g>
+</mask>
+<mask id="v94-mask_7">
+<g transform="matrix(1.0001692,0,0,.9986376,917.6667,340.6558)">
+<image id="v94-image_8" width="537" height="332" data-src="img/ae19aee53fd0d278.webp"/>
+</g>
+</mask>
+<mask id="v94-mask_11">
+<g transform="matrix(1.0004145,0,0,1.0005208,1006.317,536.59536)">
+<image id="v94-image_12" width="676" height="432" data-src="img/6075d2596e6f07b6.webp"/>
+</g>
+</mask>
+</defs>
+<g>
+<g clip-path="url(#v94-clip_1)">
+<use data-text=" " xlink:href="#v94-font_2_1" transform="matrix(32,0,0,-32,156.7099,285.901)"/>
+<g mask="url(#v94-mask_3)">
+<g opacity=".75" transform="matrix(1.0002292,0,0,1.0005738,1212.585,189.39444)">
+<image id="v94-image_5" width="598" height="339" data-src="img/9541080e29a63165.webp"/>
+</g>
+</g>
+<g transform="matrix(.3870592,0,0,.38705928,1220.235,195.42514)">
+<image id="v94-image_6" width="1504" height="835" data-src="img/918ae5fcdacb8cf6.webp"/>
+</g>
+<g mask="url(#v94-mask_7)">
+<g opacity=".75" transform="matrix(1.0001692,0,0,.9986376,917.6667,340.6558)">
+<image id="v94-image_9" width="537" height="332" data-src="img/8a1d3cd6a8ed89e8.webp"/>
+</g>
+</g>
+<g transform="matrix(.30138279,0,0,.30138273,925.3171,346.6866)">
+<image id="v94-image_10" width="1729" height="1047" data-src="img/586052a2ee14d1a0.webp"/>
+</g>
+<g mask="url(#v94-mask_11)">
+<g opacity=".75" transform="matrix(1.0004145,0,0,1.0005208,1006.317,536.59536)">
+<image id="v94-image_13" width="676" height="432" data-src="img/d7b10aefc3779a16.webp"/>
+</g>
+</g>
+<g transform="matrix(.22186835,0,0,.22186835,1013.968,542.6262)">
+<image id="v94-image_14" width="2976" height="1876" data-src="img/5fd14882d27c909d.webp"/>
+</g>
+</g>
+</g>
+</svg>

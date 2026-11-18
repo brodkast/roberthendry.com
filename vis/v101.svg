@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="861.5 127.5 1037.0 927.0" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="v101-clip_1">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+<path id="v101-font_2_1" d=""/>
+</defs>
+<g clip-path="url(#v101-clip_1)">
+<use data-text=" " xlink:href="#v101-font_2_1" transform="matrix(32,0,0,-32,478.98216,348.33399)"/>
+<g transform="matrix(1,0,0,1,867.5,133.5)">
+<image id="v101-image_3" width="1025" height="915" data-src="img/8930a5ccabf34e66.webp"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="30.1 54.7 1865.6 1018.4" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="v26-clip_1">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#v26-clip_1)">
+<g transform="matrix(1.4546769,0,0,1.4546772,1258.352,60.720766)">
+<image id="v26-image_2" width="434" height="579" data-src="img/0f70f3f9f43f88b0.webp"/>
+</g>
+<g transform="matrix(1.1791195,0,0,1.1791197,39.76982,158.74768)">
+<image id="v26-image_3" width="318" height="274" data-src="img/c106428ce80cc461.webp"/>
+</g>
+<g transform="matrix(1.7434932,0,0,1.7434932,36.11358,480.1325)">
+<image id="v26-image_4" width="592" height="148" data-src="img/08a675ce46f9490d.webp"/>
+</g>
+<g transform="matrix(1.6064389,0,0,1.6064389,41.46445,707.2837)">
+<image id="v26-image_5" width="503" height="224" data-src="img/cdfe278d1075faec.webp"/>
+</g>
+</g>
+</svg>

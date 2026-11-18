@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="964.5 137.9 763.3 483.6" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="v39-clip_1">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+<mask id="v39-mask_2">
+<g transform="matrix(.5869492,0,0,.5931104,970.5217,556.863)">
+<image id="v39-image_3" width="1280" height="99" data-src="img/1a4d6cfc4fa3fb18.webp"/>
+</g>
+</mask>
+<clipPath id="v39-clip_5">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M1410.029 501.5223C1443.654 498.7875 1443.654 494.3534 1410.029 491.6185 1376.405 488.8836 1321.889 488.8836 1288.265 491.6185 1254.641 494.3534 1254.641 498.7875 1288.265 501.5223 1321.889 504.2572 1376.405 504.2572 1410.029 501.5223Z"/>
+</clipPath>
+<clipPath id="v39-clip_6">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M1410.029 501.5223C1443.654 498.7875 1443.654 494.3534 1410.029 491.6185 1376.405 488.8836 1321.889 488.8836 1288.265 491.6185 1254.641 494.3534 1254.641 498.7875 1288.265 501.5223 1321.889 504.2572 1376.405 504.2572 1410.029 501.5223Z"/>
+</clipPath>
+<clipPath id="v39-clip_7">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M1262.047 488.5673H1436.2479V504.57347H1262.047Z"/>
+</clipPath>
+<clipPath id="v39-clip_8">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M1057.674 486.2283H1634.665V936.06326H1057.674Z"/>
+</clipPath>
+<mask id="v39-mask_9">
+<g transform="matrix(.45360933,0,0,.45361377,1057.674,143.93231)">
+<image id="v39-image_10" width="1272" height="1002" data-src="img/eaf9d01201d2d1dc.webp"/>
+</g>
+</mask>
+<clipPath id="v39-clip_12">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+<path id="v39-font_13_1" d=""/>
+</defs>
+<g>
+<g clip-path="url(#v39-clip_1)">
+<g mask="url(#v39-mask_2)">
+<g transform="matrix(.5869492,0,0,.5931104,970.5217,556.863)">
+<image id="v39-image_4" width="1280" height="99" data-src="img/4ca4ded99632a501.webp"/>
+</g>
+</g>
+</g>
+<g clip-path="url(#v39-clip_5)">
+<g clip-path="url(#v39-clip_6)">
+<g clip-path="url(#v39-clip_7)">
+<image x="1262" y="575" width="175" height="17" data-src="img/b1cd3f64b6ba9296.webp"/>
+</g>
+</g>
+</g>
+<g clip-path="url(#v39-clip_8)">
+<g mask="url(#v39-mask_9)">
+<g transform="matrix(.45360933,0,0,.45361377,1057.674,143.93231)">
+<image id="v39-image_11" width="1272" height="1002" data-src="img/0a0831ee3691ccb1.webp"/>
+</g>
+</g>
+</g>
+<g clip-path="url(#v39-clip_12)">
+<use data-text=" " xlink:href="#v39-font_13_1" transform="matrix(32,0,0,-32,210.87955,339.32014)"/>
+<use data-text=" " xlink:href="#v39-font_13_1" transform="matrix(32,0,0,-32,201.9295,744.5207)"/>
+<use data-text=" " xlink:href="#v39-font_13_1" transform="matrix(32,0,0,-32,1407.703,744.5207)"/>
+<use data-text=" " xlink:href="#v39-font_13_1" transform="matrix(32,0,0,-32,848.834,744.5207)"/>
+<path transform="matrix(0,-1,1,0,549.4283,969.9532)" stroke-width="1" stroke-linecap="butt" stroke-dasharray="1,1" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0H284.8221"/>
+<path transform="matrix(0,-1,1,0,1145.769,951.1162)" stroke-width="1" stroke-linecap="butt" stroke-dasharray="1,1" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0H265.9851"/>
+<g transform="matrix(.86699518,0,0,.86699518,1194.445,174.0827)">
+<image id="v39-image_14" width="350" height="351" data-src="img/15229f8316483bd2.webp"/>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="54.0 103.8 1821.0 976.2" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="v103-clip_1">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+<mask id="v103-mask_4">
+<g transform="matrix(.99999997,0,0,1,564.8495,313.46925)">
+<image id="v103-image_5" width="975" height="689" data-src="img/451ea07b7eb30da6.webp"/>
+</g>
+</mask>
+<mask id="v103-mask_8">
+<g transform="matrix(1,0,0,1,176.8495,709.66067)">
+<image id="v103-image_9" width="615" height="762" data-src="img/0df8692eee8e8c5f.webp"/>
+</g>
+</mask>
+</defs>
+<g>
+<g clip-path="url(#v103-clip_1)">
+<g transform="matrix(1,0,0,1,1131,109.79059)">
+<image id="v103-image_2" width="738" height="698" data-src="img/e50c60640c56394e.webp"/>
+</g>
+<g transform="matrix(1,0,0,1,60,164)">
+<image id="v103-image_3" width="1074" height="530" data-src="img/1a02a92abb5aeede.webp"/>
+</g>
+<g mask="url(#v103-mask_4)">
+<g opacity=".75" transform="matrix(.99999997,0,0,1,564.8495,313.46925)">
+<image id="v103-image_6" width="975" height="689" data-src="img/1fb46cb7c00144fc.webp"/>
+</g>
+</g>
+<g transform="matrix(1,0,0,1,572.5,319.5)">
+<image id="v103-image_7" width="959" height="673" data-src="img/5fc9b3b351e750cf.webp"/>
+</g>
+<g mask="url(#v103-mask_8)">
+<g opacity=".75" transform="matrix(1,0,0,1,176.8495,709.66067)">
+<image id="v103-image_10" width="615" height="762" data-src="img/d069afd6d8960f24.webp"/>
+</g>
+</g>
+<g transform="matrix(1,0,0,1,184.5,715.6915)">
+<image id="v103-image_11" width="599" height="746" data-src="img/298c4dbb09add4f1.webp"/>
+</g>
+</g>
+</g>
+</svg>

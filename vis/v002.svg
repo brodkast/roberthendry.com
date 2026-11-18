@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="332.1 186.4 1587.9 893.6" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="v2-clip_1">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+<path id="v2-font_3_82" d="M.17999268 .13476563C.23899842 .13476563 .28799439 .1837616 .28799439 .24176026 .28799439 .30075074 .23899842 .34976197 .17999268 .34976197 .12098694 .34976197 .07199097 .30075074 .07199097 .24176026 .07199097 .1837616 .12098694 .13476563 .17999268 .13476563Z"/>
+<mask id="v2-mask_4">
+<g transform="matrix(.77807417,0,0,.7780741,342.5536,724.65689)">
+<image id="v2-image_5" width="900" height="351" data-src="img/2097b5b2cf82c9b4.webp"/>
+</g>
+</mask>
+</defs>
+<g>
+<g clip-path="url(#v2-clip_1)">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M1358.208 222.2415H1701.9028V985.5827H1358.208Z" fill="#ffffff"/>
+<path transform="matrix(1,0,0,-1,0,1080)" d="M418.9308 236.0574H1394.3474V358.14863H418.9308Z" fill="#ffffff"/>
+<path transform="matrix(1,0,0,-1,0,1080)" d="M406.8961 959.9918H1439.6981V1051.9672H406.8961Z" fill="#ffffff"/>
+<g transform="matrix(.5,0,0,.5,1189.026,192.38672)">
+<image id="v2-image_2" width="1528" height="1786" data-src="img/c9a7eb758a9ab4e2.webp"/>
+</g>
+<use data-text="&#x2022;" xlink:href="#v2-font_3_82" transform="matrix(20.91,0,0,-20.91,338.065,693.51748)" fill="#7c868d"/>
+<g mask="url(#v2-mask_4)">
+<g transform="matrix(.77807417,0,0,.7780741,342.5536,724.65689)">
+<image id="v2-image_6" width="900" height="351" data-src="img/22d2531d32aaa245.webp"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="558.5 0.0 1361.5 1080.0" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="v10-clip_1">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+<clipPath id="v10-clip_3">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M676.6981 112.8777H1660.2291V600.0767H676.6981Z"/>
+</clipPath>
+<clipPath id="v10-clip_4">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M676.6981 112.8777H1660.229V600.0767H676.6981Z"/>
+</clipPath>
+<clipPath id="v10-clip_6">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#v10-clip_1)">
+<g transform="matrix(1.3841572,0,0,1.3841571,1143.719,3.4659425)">
+<image id="v10-image_2" width="557" height="828" data-src="img/2f7ed41124672464.webp"/>
+</g>
+</g>
+<g clip-path="url(#v10-clip_3)">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M677.6981 113.8777H1659.2291V599.0767H677.6981Z" fill="#d9d9d9"/>
+</g>
+<g clip-path="url(#v10-clip_4)">
+<g transform="matrix(.23193075,0,0,.23193069,677.6981,480.9233)">
+<image id="v10-image_5" width="4232" height="2092" data-src="img/bf378bf14951533e.webp"/>
+</g>
+</g>
+<g clip-path="url(#v10-clip_6)">
+<g transform="matrix(.65654239,0,0,.6565423,564.4548,744.5212)">
+<image id="v10-image_7" width="1495" height="886" data-src="img/f5f12405cfaaebcb.webp"/>
+</g>
+</g>
+</svg>

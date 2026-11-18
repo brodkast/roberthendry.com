@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="194.8 142.3 1725.2 937.7" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="v19-clip_1">
+<path transform="matrix(1,0,0,-1,0,1080)" d="M0 0H1920V1080H0Z"/>
+</clipPath>
+<mask id="v19-mask_3">
+<g transform="matrix(.99999997,0,0,1,397.3724,375.57887)">
+<image id="v19-image_4" width="1700" height="814" data-src="img/405cde4485bc5973.webp"/>
+</g>
+</mask>
+</defs>
+<g>
+<g clip-path="url(#v19-clip_1)">
+<g transform="matrix(1,0,0,1,824.1945,148.33332)">
+<image id="v19-image_2" width="1686" height="802" data-src="img/3c49cecf87b95da0.webp"/>
+</g>
+<g mask="url(#v19-mask_3)">
+<g opacity=".5" transform="matrix(.99999997,0,0,1,397.3724,375.57887)">
+<image id="v19-image_5" width="1700" height="814" data-src="img/0384303088820d0c.webp"/>
+</g>
+</g>
+<g transform="matrix(1,0,0,1,402.2807,382.57667)">
+<image id="v19-image_6" width="1690" height="804" data-src="img/0712425075ef54a1.webp"/>
+</g>
+<g transform="matrix(1,0,0,1,200.8307,703.2755)">
+<image id="v19-image_7" width="1780" height="804" data-src="img/4710f2c286d859ca.webp"/>
+</g>
+</g>
+</g>
+</svg>
