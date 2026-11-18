@@ -1,0 +1,66 @@
+name: Deploy portfolio to GitHub Pages
+
+on:
+  # Publish automatically whenever content is pushed to main.
+  # Workflow-only changes under .github/ do not trigger a deploy.
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+      - 'README.md'
+
+  # Manual run from the Actions tab.
+  workflow_dispatch:
+
+# One deploy at a time; a newer push waits for the running one instead of cancelling it.
+concurrency:
+  group: deploy-roberthendry
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # The published site is exactly the repo minus git and workflow files.
+      # Each deploy replaces the whole site, so a file deleted from the repo
+      # disappears from roberthendry.com on the same push.
+      - name: Stage site files
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='README.md' \
+            ./ "$RUNNER_TEMP/site/"
+          touch "$RUNNER_TEMP/site/.nojekyll"
+          test -f "$RUNNER_TEMP/site/index.html" || { echo "index.html missing"; exit 1; }
+          echo "Files to publish: $(find "$RUNNER_TEMP/site" -type f | wc -l)"
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
