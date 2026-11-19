@@ -22,17 +22,12 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  deploy:
+  # Job 1: package the site and upload it as the Pages artifact.
+  build:
     runs-on: ubuntu-latest
 
     permissions:
       contents: read
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Check out repository
@@ -61,6 +56,20 @@ jobs:
         with:
           path: ${{ runner.temp }}/site
 
+  # Job 2: publish the uploaded artifact. Runs only after the upload has finished.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
