@@ -1,4 +1,4 @@
-hairline 0.5.1 by Lucas Marques, https://github.com/lucasmarkes/hairline
+hairline kernel (from hairline 0.5.1) by Lucas Marques, https://github.com/lucasmarkes/hairline
 
 MIT License
 

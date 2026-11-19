@@ -15,6 +15,6 @@ Push to `main` and `.github/workflows/deploy-pages.yml` publishes the repo to ro
 
 `CNAME` holds the custom domain; leave it in place.
 
-## Hairline figures
+## Isometric figures
 
-Each case study has one isometric line figure from [hairline](https://github.com/lucasmarkes/hairline) (MIT, `vendor/hairline.js`): a chip on its card in `index.html` and a figure in its page hero. A slot is `<div data-hl="vault">`, where the value is a hairline figure name; `hairline-site.js` mounts it when it scrolls into view. Colours are the `--hairline-*` properties in the `hl-css` style block of each page.
+Each case study has one original isometric figure, drawn on the [hairline](https://github.com/lucasmarkes/hairline) kernel (MIT, `vendor/hairline-kernel.js`). All twelve are defined in `iso-figures.js`, keyed by page name. A slot is `<div data-iso="radial">`: the top graphic of each case-study page, and a chip on each card in `index.html`. Colours are the `--hairline-*` properties in the `hl-css` style block of each page.
