@@ -1,5 +1,30 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<html lang="en"><head><meta charset="utf-8"><style id="gate-css">
+html.gated,html.gated body{overflow:hidden!important}
+#gate{display:none}
+html.gated #gate{display:flex;position:fixed;inset:0;z-index:2147483000;background:var(--paper,#fbfbfb);align-items:center;justify-content:center;padding:24px}
+#gate form{width:min(100%,380px);display:grid;gap:14px}
+#gate .k{font:700 11px/1 var(--util,system-ui);letter-spacing:.2em;text-transform:uppercase;color:var(--blue,#33619b);margin:0}
+#gate h1{font:500 clamp(30px,6vw,44px)/1.05 var(--disp,Georgia,serif);margin:0;color:var(--ink,#2b2e33)}
+#gate p{margin:0;font-size:15px;line-height:1.5;color:var(--mute,#6b6f76)}
+#gate .row{display:flex;gap:8px}
+#gate input{flex:1;min-width:0;font:inherit;font-size:16px;padding:11px 13px;border:1.5px dashed var(--blue,#33619b);border-radius:10px 14px 11px 13px/13px 10px 14px 11px;background:#fff;color:var(--ink,#2b2e33)}
+#gate input:focus{outline:2px solid var(--ink,#2b2e33);outline-offset:2px}
+#gate button{font:700 12px/1 var(--util,system-ui);letter-spacing:.14em;text-transform:uppercase;padding:0 18px;border:0;border-radius:10px;background:var(--ink,#2b2e33);color:#fff;cursor:pointer}
+#gate .err{color:#b3261e;min-height:1.4em;font-size:14px}
+#gate .home{font-size:14px}
+</style>
+<script>
+/* Soft password for case studies. Not security: the password is in this file on purpose.
+   Once entered, it is remembered on this device for every case study. */
+(function(){var K='rh-cases-unlocked';var ok=false;
+try{ok=localStorage.getItem(K)==='1'}catch(e){}
+if(!ok&&document.cookie.indexOf(K+'=1')>-1)ok=true;
+if(!ok)document.documentElement.classList.add('gated');
+window.RH_UNLOCK=function(){try{localStorage.setItem(K,'1')}catch(e){}
+document.cookie=K+'=1; max-age=315360000; path=/; SameSite=Lax';
+document.documentElement.classList.remove('gated');};})();
+</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MIS / DOC Case Study</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="MIS / DOC report builder: an AI-assisted UX case study by Oscar Hendry.">
@@ -634,7 +659,15 @@ html.pg-loading,html.pg-loading body{overflow:hidden}
 .hl-chip.hl-in{opacity:1}
 .csCard:hover .hl-chip{transform:translateY(-3px) rotate(-1.5deg)}
 @media(prefers-reduced-motion:reduce){.hl-chip,.hl-top [data-iso]{transition:none}}
-</style></head><body>
+</style></head><body><div id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-h"><form id="gate-f" autocomplete="off">
+<p class="k">Case studies</p><h1 id="gate-h">Password, please.</h1>
+<p>The work behind this door is shared with people I&rsquo;m talking to. If that&rsquo;s you, you have the password. If not, <a href="mailto:roberthendry@gmail.com?subject=Case%20study%20password">ask nicely</a>.</p>
+<label class="row"><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Password</span><input id="gate-i" type="password" name="pw" autocomplete="current-password" required><button type="submit">Enter</button></label>
+<p class="err" id="gate-e" aria-live="polite"></p><a class="home" href="index.html">&larr; Back to the homepage</a></form></div>
+<script>(function(){var f=document.getElementById('gate-f'),i=document.getElementById('gate-i'),e=document.getElementById('gate-e');
+if(document.documentElement.classList.contains('gated'))setTimeout(function(){i.focus()},50);
+f.addEventListener('submit',function(ev){ev.preventDefault();
+if(i.value.trim().toLowerCase()==='hireme'){window.RH_UNLOCK();scrollTo(0,0);}else{e.textContent='Not quite. Check for typos.';i.select();}});})();</script>
 <div class="progress" aria-hidden="true"></div>
 <div id="pgLoad" role="status" aria-live="polite" aria-label="Loading case study">
 <svg viewBox="0 0 260 70" width="260" height="70" aria-hidden="true">
