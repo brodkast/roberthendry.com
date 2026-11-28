@@ -78,8 +78,8 @@
         else if (slideFromImg(f)) slides.push(f);
       });
     } else {
-      var src = [].slice.call(document.querySelectorAll('figure[data-svg], figure.sitefig')).filter(function (f) {
-        return !f.closest('.hero, header, footer, .archive') && !f.querySelector('svg.wbs') && (f.dataset.svg || f.querySelector('img'));
+      var src = [].slice.call(document.querySelectorAll('figure[data-svg], figure.sitefig, figure[data-orig-ref]')).filter(function (f) {
+        return !f.closest('.hero, header, footer, .archive') && (f.dataset.origRef || (!f.querySelector('svg.wbs') && (f.dataset.svg || f.querySelector('img'))));
       });
       if (!src.length) return;
       sec = document.createElement('section'); sec.className = 'archive wrap'; sec.setAttribute('aria-label', 'More from the project');
@@ -87,7 +87,8 @@
       grid = document.createElement('div'); sec.appendChild(grid);
       src.forEach(function (f) {
         var n;
-        if (f.dataset.svg) n = slideFromRef(f.dataset.svg, f.dataset.alt);
+        if (f.dataset.origRef) n = slideFromRef(f.dataset.origRef, f.dataset.origAlt);
+        else if (f.dataset.svg) n = slideFromRef(f.dataset.svg, f.dataset.alt);
         else { n = document.createElement('figure'); n.className = 'sitefig'; n.appendChild(f.querySelector('img').cloneNode()); slideFromImg(n); }
         grid.appendChild(n); slides.push(n);
       });
