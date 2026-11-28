@@ -1002,10 +1002,24 @@ function follow(){
   }
   if(el<tLast+2) requestAnimationFrame(follow);
 }
+// opens on the finished drawing (the end state), then replays itself on a loop while it is on screen
+let loopT=0,inView=true;
+function endState(){svg.getAnimations({subtree:true}).forEach(a=>a.cancel());T0.forEach(it=>play(it,true));wrap.scrollLeft=wrap.scrollWidth;cur=wrap.scrollLeft}
+function replay(){
+  clearTimeout(loopT);
+  if(!inView||document.hidden){loopT=setTimeout(replay,1500);return}
+  wrap.animate([{opacity:1},{opacity:0}],{duration:450,easing:'ease-in'}).finished.then(()=>{
+    svg.getAnimations({subtree:true}).forEach(a=>a.cancel());
+    cur=0;wrap.scrollLeft=0;t0=performance.now();T0.forEach(it=>play(it,false));requestAnimationFrame(follow);
+  });
+  loopT=setTimeout(replay,(tLast+4.5)*1000);
+}
 function start(){
   if(svg.dataset.played) return; svg.dataset.played=1;
-  if(RM){T0.forEach(it=>play(it,true));play({key:'cap'},true);wrap.scrollLeft=wrap.scrollWidth;return}
-  t0=performance.now();T0.forEach(it=>play(it,false));requestAnimationFrame(follow);
+  endState();
+  if(RM) return;
+  if('IntersectionObserver' in window)new IntersectionObserver(es=>{inView=es[0].isIntersecting},{threshold:.2}).observe(wrap);
+  loopT=setTimeout(replay,2500);
 }
 // page load starts the drawing; wait briefly for the hand-lettered fonts so labels never swap mid-draw
 const go=()=>{(document.fonts&&document.fonts.ready?Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,1200))]):Promise.resolve()).then(start)};
