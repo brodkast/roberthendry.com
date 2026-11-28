@@ -68,6 +68,13 @@ const FIG = {
       box(0, 0, 76, 104, 0, 3, { r: 7 }),
       b(6, 8, 13, 96, 0, { r: 2 }), b(17, 8, 40, 96, 1, { r: 3, hi: 1 }), b(44, 8, 58, 34, 2, { r: 3 }), b(44, 39, 58, 65, 3, { r: 3 }), b(44, 70, 58, 96, 4, { r: 3 }), b(62, 8, 70, 96, 5, { r: 2 }),
     ]; } },
+  'salesforce-journey': { label: 'Six stepping stones rising in a curve from a small search box to a large platform, with a marker moving along them.',
+    cap: 'Every stage of the decision gets its own stepping stone.',
+    build(t) { const e = ease(t), st = [[0, 60, 2], [20, 44, 4], [40, 30, 6], [62, 18, 8], [86, 10, 10], [112, 6, 12]], at = Math.min(5, Math.floor(e * 5.99)), p = [];
+      p.push(line(st.map(([x, y]) => [x + 9, y + 9, 0.1]), 'dash'));
+      st.forEach(([x, y, h], i) => p.push(box(x, y, x + 18, y + 18, 0, h, { r: 4, hi: i === at })));
+      const [x, y, h] = st[at]; p.push(cyl(x + 9, y + 9, 3.6, h, h + 7), cyl(x + 9, y + 9, 2.6, h + 8, h + 12));
+      return p; } },
   'ai-practice': { label: 'A staircase of six steps from a stack of documents up to a finished screen, with a marker climbing it.',
     cap: 'Six gated steps, from a pile of source material to a prototype.',
     build(t) { const H = (k) => 6 + k * 6, s = clamp(t, 0, 1) * 5, k = Math.min(4, Math.floor(s)), f = s - k, p = [];
