@@ -661,7 +661,7 @@ html.pg-loading,html.pg-loading body{overflow:hidden}
 .hl-chip.hl-in{opacity:1}
 .csCard:hover .hl-chip{transform:translateY(-3px) rotate(-1.5deg)}
 @media(prefers-reduced-motion:reduce){.hl-chip,.hl-top [data-iso]{transition:none}}
-</style></head><body><div id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-h"><form id="gate-f" autocomplete="off">
+</style><script src="carousel.js" defer></script></head><body><div id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-h"><form id="gate-f" autocomplete="off">
 <p class="k">Case studies</p><h1 id="gate-h">Password, please.</h1>
 <p>The work behind this door is shared with people I&rsquo;m talking to. If that&rsquo;s you, you have the password. If not, <a href="mailto:roberthendry@gmail.com?subject=Case%20study%20password">ask nicely</a>.</p>
 <label class="row"><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Password</span><input id="gate-i" type="password" name="pw" autocomplete="current-password" required><button type="submit">Enter</button></label>
@@ -878,8 +878,8 @@ function build(){
     const jx=Math.min(jr.right-mr.left-16,jr.left-mr.left+padL+tp.x*sc-endScroll),jy=js.top-mr.top+tp.y*sc;
     pts.push([jx,jy-2],[jx,jy+(jr.bottom-js.bottom)+70]);
   }else{
-    const h1=main.querySelector('.hero h1'),hb=h1?h1.getBoundingClientRect():null;
-    pts.push(hb?[hb.left-mr.left+hb.width*.35,hb.bottom-mr.top+28]:[L,120]);
+    const h1=main.querySelector('.hero h1'),hf=main.querySelector('.hero .hero-grid figure, .hero figure'),hb=h1?h1.getBoundingClientRect():null,fb=hf?hf.getBoundingClientRect():null;
+    pts.push(fb&&fb.height?[fb.left-mr.left+fb.width*.5,fb.bottom-mr.top+20]:hb?[hb.left-mr.left+hb.width*.35,hb.bottom-mr.top+28]:[L,120]);
     pts.push([xL+(mobile?0:30),bot(secs[0])-40]);
   }
   const anchors=[];

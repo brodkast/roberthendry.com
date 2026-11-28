@@ -1126,8 +1126,8 @@ function build(){
     const jx=Math.min(jr.right-mr.left-16,jr.left-mr.left+padL+tp.x*sc-endScroll),jy=js.top-mr.top+tp.y*sc;
     pts.push([jx,jy-2],[jx,jy+(jr.bottom-js.bottom)+70]);
   }else{
-    const h1=main.querySelector('.hero h1'),hb=h1?h1.getBoundingClientRect():null;
-    pts.push(hb?[hb.left-mr.left+hb.width*.35,hb.bottom-mr.top+28]:[L,120]);
+    const h1=main.querySelector('.hero h1'),hf=main.querySelector('.hero .hero-grid figure, .hero figure'),hb=h1?h1.getBoundingClientRect():null,fb=hf?hf.getBoundingClientRect():null;
+    pts.push(fb&&fb.height?[fb.left-mr.left+fb.width*.5,fb.bottom-mr.top+20]:hb?[hb.left-mr.left+hb.width*.35,hb.bottom-mr.top+28]:[L,120]);
     pts.push([xL+(mobile?0:30),bot(secs[0])-40]);
   }
   const anchors=[];
